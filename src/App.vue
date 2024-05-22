@@ -1,47 +1,41 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import Logo from "@/components/icons/logo.vue";
+import { IonPage, IonHeader, IonToolbar, IonContent, IonFooter, IonIcon } from '@ionic/vue';
+import { settingsOutline } from 'ionicons/icons';
+import HelloWorld from "@/components/HelloWorld.vue";
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <ion-page>
+    <ion-header class="header">
+      <ion-toolbar class="header-toolbar">
+        <Logo />
+        <ion-buttons slot="end">
+          <ion-icon :icon="settingsOutline"></ion-icon>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
 
-    <div class="wrapper">
-      <HelloWorld msg="Dit is mijn vue project" />
-    </div>
-  </header>
+    <ion-content>
+      <HelloWorld />
+    </ion-content>
 
-  <main>
-    <TheWelcome />
-  </main>
+    <ion-footer>
+    </ion-footer>
+  </ion-page>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
+
+ion-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+ion-toolbar {
+  padding: 0 10px;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
 </style>
