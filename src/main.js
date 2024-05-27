@@ -7,8 +7,9 @@ import '@ionic/vue/css/typography.css';
 
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from "../router/index.js";
 
 const app = createApp(App)
-  .use(IonicVue);
+  .use(IonicVue).use(router);
 
 app.mount('#app');
