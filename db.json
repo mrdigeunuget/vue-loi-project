@@ -1,0 +1,63 @@
+{
+  "reports": [
+    {
+      "id": 1,
+      "inspectionType": "Schade opnemen",
+      "fields": {
+        "location": "Voorzijde gebouw",
+        "newDamage": "Ja",
+        "damageType": "slijtage",
+        "date": "2024-06-26",
+        "urgentActionRequired": "Nee",
+        "description": "Kleine scheur in de gevel",
+        "photos": [
+          "foto1.jpg",
+          "foto2.jpg"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "inspectionType": "Achterstallig onderhoud opnemen",
+      "fields": {
+        "location": "Dak",
+        "maintenanceType": "houtrot",
+        "urgentActionRequired": "Ja",
+        "costEstimate": "500-1.500",
+        "photos": [
+          "dak_foto1.jpg"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "inspectionType": "Technische installaties inspecteren",
+      "fields": {
+        "location": "Machinekamer",
+        "installationType": "koeling",
+        "reportedFailures": "Geen",
+        "testProcedure": "test_procedure.pdf",
+        "approved": "Ja",
+        "comments": "Alles functioneert naar behoren",
+        "photos": [
+          "machinekamer_foto1.jpg"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "inspectionType": "Modificaties inventariseren",
+      "fields": {
+        "existingSituationAndDocumentedModifications": "huidige_situatie.pdf",
+        "modificationLocation": "Kelder",
+        "performedBy": "aannemer",
+        "modificationDescription": "Nieuwe waterleiding aangelegd",
+        "actionToBeTaken": "accepteren",
+        "comments": "In goede staat",
+        "photos": [
+          "kelder_foto1.jpg"
+        ]
+      }
+    }
+  ]
+}

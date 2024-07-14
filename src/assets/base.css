@@ -19,8 +19,8 @@
   --ion-font-family: "Asap", sans-serif;
   --ion-card-color: var(--white-soft);
   --ion-text-color: var(--white-soft);
-  --ion-card-background: var(--light-sub-color);
-  --slider-color: var(--logo-green);
+  --ion-card-background: var(--logo-green);
+  --slider-color: var(--light-sub-color);
 }
 
 
